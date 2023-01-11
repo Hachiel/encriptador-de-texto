@@ -1,22 +1,7 @@
 window.onload = function(){
     document.getElementById("button_cipher").onclick=cipher;
     document.getElementById("button_decipher").onclick=decipher;
-    document.getElementById("copy_text").onclick=copyText;
-}
-
-function keyWord(vocals){
-    switch(vocals){
-        case "a":
-            return "ai";
-        case "e":
-            return "enter";
-        case "i":
-            return "imes";
-        case "o":
-            return "ober";
-        case "u":
-            return "ufat";
-    }
+    document.getElementById("copy_button").onclick=copying;
 }
 
 function cipher(){
@@ -27,19 +12,19 @@ function cipher(){
 
     for(i=0; i<content.length; i++){
         if (content[i] == "a"){
-            result += keyWord(content[i])
+            result += "ai";
         }
         else if (content[i] == "e"){
-            result += keyWord(content[i])
+            result += "enter";
         }
         else if (content[i] == "i"){
-            result += keyWord(content[i])
+            result += "imes";
         }
         else if (content[i] == "o"){
-            result += keyWord(content[i])
+            result += "ober";
         }
         else if (content[i] == "u"){
-            result += keyWord(content[i])
+            result += "ufat";
         } else {
             result += content[i];
         }
@@ -80,9 +65,7 @@ function decipher(){
     dataOuput.innerHTML = result;
 }
 
-function copyText(){
-    var dataEntry = document.getElementById("boxOut1");
-    //No pude encontrar la forma de hacerlo con la API clipboard.
-    dataEntry.select()
-    document.execCommand('copy');
+function copying(){
+    var dataEntry = document.getElementById("boxOut1").value;
+    navigator.clipboard.writeText(dataEntry);
 }
