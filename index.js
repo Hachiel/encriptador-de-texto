@@ -2,7 +2,10 @@ window.onload = function(){
     document.getElementById("button_cipher").onclick=cipher;
     document.getElementById("button_decipher").onclick=decipher;
     document.getElementById("copy_button").onclick=copying;
+    document.getElementById("boxIn1").focus();
 }
+
+
 
 function cipher(){
     var dataEntry = document.getElementById("boxIn1").value;

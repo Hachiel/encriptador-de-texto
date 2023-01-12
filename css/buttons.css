@@ -1,0 +1,96 @@
+.copy__button {
+    position: absolute;
+    width: 336px;
+    height: 67px;
+    left: 30px;
+    top: 850px;
+
+    box-sizing: border-box;
+
+    padding: 24px;
+    gap: 8px;
+    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 19px;
+    text-align: center;
+
+    color: rgb(147, 220, 196);
+
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+
+    border: 1px solid rgb(57, 79, 80);
+    border-radius: 24px;
+
+    cursor: pointer;
+}
+
+.functional__buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    position: absolute;
+    width: 680px;
+    height: 67px;
+    left: 240px;
+    top: 895px;
+}
+
+.cip__button {
+    width: 328px;
+    height: 67px;
+
+    background: rgb(23, 30, 30);
+    border-radius: 24px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 19px;
+    text-align: center;
+
+    color: rgb(147, 220, 196);
+
+    border: 1px solid rgb(23, 30, 30);
+    border-radius: 24px;
+
+    cursor: pointer;
+}
+
+.dep__button {
+    width: 328px;
+    height: 67px;
+
+    background: rgb(78, 94, 95);
+    border-radius: 24px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 19px;
+    text-align: center;
+
+    color: rgb(147, 220, 196);
+    
+    border: 1px solid rgb(78, 94, 95);
+    border-radius: 24px;
+
+    cursor: pointer;
+}
