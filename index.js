@@ -5,7 +5,16 @@ window.onload = function(){
     document.getElementById("boxIn1").focus();
 }
 
+function mensajeEncontrado() {
+    var mensaje = document.getElementById("mensajeEncontrado");
+    var caja = document.getElementById("boxOut1").value;
 
+    if(caja == ""){
+        mensaje.style.display="inline";
+    } else {
+        mensaje.style.display="none";
+    }
+}
 
 function cipher(){
     var dataEntry = document.getElementById("boxIn1").value;
@@ -33,6 +42,7 @@ function cipher(){
         }
     }
     dataOuput.innerHTML = result;
+    mensajeEncontrado()
 }
 
 function decipher(){
@@ -66,6 +76,7 @@ function decipher(){
         }
     }
     dataOuput.innerHTML = result;
+    mensajeEncontrado()
 }
 
 function copying(){

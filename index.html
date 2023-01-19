@@ -9,29 +9,32 @@
     <title>Challenge Alura One - Aula 4 </title>
 </head>
 <body>
-    <section class="section__body">
-        <div class="alura__logo">
-            <img src="assets/AdeAluraCrom.png" alt="AdeAlura" class="alura__a">
-        </div>
-        <div class="left__box">
-            <textarea name="boxIn" id="boxIn1" cols="30" rows="10" class="input__area" placeholder="Ingrese su texto aquí"></textarea>
-            <div class="functional__buttons">
-                <button id="button_cipher" class="cip__button">Encriptar</button>
-                <button id="button_decipher" class="dep__button">Desencriptar</button>
+    <main>
+        <section class="section__body">
+            <div class="alura__logo">
+                <img src="assets/AdeAluraCrom.png" alt="AdeAlura" class="alura__a">
             </div>
-            <div class="div__alert">
-                <img src="assets/bi_exclamation-circle-fill.png" alt="alert" class="alert__icon">
-                <p class="caps__alert">Solo letras minúsculas y sin acentos</p>
+            <div class="left__box">
+                <textarea name="boxIn" id="boxIn1" cols="30" rows="10" class="input__area" placeholder="Ingrese su texto aquí"></textarea>
+                <div class="functional__buttons">
+                    <button id="button_cipher" class="cip__button">Encriptar</button>
+                    <button id="button_decipher" class="dep__button">Desencriptar</button>
+                </div>
+                <div class="div__alert">
+                    <img src="assets/bi_exclamation-circle-fill.png" alt="alert" class="alert__icon">
+                    <p class="caps__alert">Solo letras minúsculas y sin acentos</p>
+                </div>
             </div>
-        </div>
 
-        <div class="right__box">
-            <textarea name="boxOut" id="boxOut1" cols="30" rows="10" class="output__area" placeholder="No se detectaron mensajes nuevos"></textarea>
-            <div class="fill__copy">
-                <button id="copy_button" class="copy__button">Copiar</button>
+            <div class="right__box">
+                <textarea name="boxOut" id="boxOut1" cols="30" rows="10" class="output__area" readonly></textarea>
+                <div class="fill__copy">
+                    <p id="mensajeEncontrado" class="mensaje__encontrado">Ningún mensaje fue encontrado</p>
+                    <button id="copy_button" class="copy__button">Copiar</button>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
     <script src="index.js"></script>
 </body>
 </html>
